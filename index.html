@@ -228,7 +228,7 @@
             return blocStyles[bloc];
         }
 
-        fetch('https://geojson-maps.ash.ms/countries-110m.json') // GeoJSON con confini semplificati
+        fetch('https://raw.githubusercontent.com/simonevetere/geopolitica/refs/heads/main/custom.geo.json') // GeoJSON con confini semplificati
             .then(response => response.json())
             .then(geoJsonData => {
                 L.geoJson(geoJsonData, {
